@@ -1,0 +1,40 @@
+{
+  "name": "lark-ping",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.ts"
+  },
+  "scripts": {
+    "setup:dev": "effect-tsgo patch --typescript --oxlint",
+    "test": "vitest run --exclude '**/.worktrees/**'",
+    "typecheck": "tsc --noEmit",
+    "lint": "oxlint --type-aware .",
+    "format": "oxfmt .",
+    "format:check": "oxfmt --check ."
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.74.0",
+    "@opencode/client": "^2.0.22",
+    "@opencode/plugin": "^2.0.22",
+    "effect": "4.0.0-rc.112"
+  },
+  "devDependencies": {
+    "@effect/tsgo": "0.48.0",
+    "@effect/vitest": "4.0.0-rc.112",
+    "@types/node": "^26.6.4",
+    "oxfmt": "0.71.0",
+    "oxlint": "1.86.0",
+    "oxlint-tsgolint": "7.0.2003",
+    "typescript": "7.0.2",
+    "vitest": "4.1.11"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
