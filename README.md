@@ -105,3 +105,5 @@ npm run format:check
 These checks cover code quality and unit tests, not live Lark delivery.
 
 After dependency changes, run `npm install` and commit `package-lock.json`.
+GitHub Actions runs `npm ci` and `npm test` on Node.js 22 for pushes, pull requests,
+and manual runs.

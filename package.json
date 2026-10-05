@@ -9,6 +9,7 @@
   },
   "scripts": {
     "setup:dev": "effect-tsgo patch --typescript --oxlint",
+    "check": "npm run format:check && npm run typecheck && npm run lint && npm test",
     "test": "vitest run --exclude '**/.worktrees/**'",
     "typecheck": "tsc --noEmit",
     "lint": "oxlint --type-aware .",
