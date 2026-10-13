@@ -22,8 +22,9 @@ Supports one recipient through the international Lark API, not Feishu or group c
 
 ## Install the plugin
 
-Requires [Node.js](https://nodejs.org/) 22.12 or newer. If an agent handles setup,
-it needs your permission to change your global config or restart OpenCode.
+Requires OpenCode 2.0.27 or newer and [Node.js](https://nodejs.org/) 22.12 or newer.
+If an agent handles setup, it needs your permission to change your global config
+or restart OpenCode.
 
 1. Clone this repository and install dependencies:
 
